@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trips"
+            android:icon="@drawable/ic_directions_run_black_18dp"
+            android:title="My Runs" />
+        <item
+            android:id="@+id/nav_conv"
+            android:icon="@drawable/ic_credit_card_black_18dp"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_face_black_18dp"
+            android:title="Friends" />
+    </group>
+
+    <item android:title="Manage Account">
+        <menu>
+            <item
+                android:id="@+id/nav_log"
+                android:icon="@drawable/ic_person_black_18dp"
+                android:title="Log in / Log out" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_18dp"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

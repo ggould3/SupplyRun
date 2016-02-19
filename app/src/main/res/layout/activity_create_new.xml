@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.example.ggould.supplyrun.CreateNewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:padding="8dp"
+            android:elevation="2dp">
+
+            <EditText
+                android:id="@+id/primary_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Where are you going?"
+                android:inputType="textCapSentences|text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/expandable_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:animateLayoutChanges="true">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/add_new_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add stop"
+                android:padding="8dp"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:layout_marginRight="1dp"/>
+
+            <Button
+                android:id="@+id/add_friends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Continue"
+                android:padding="8dp"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

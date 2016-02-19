@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ggould.supplyrun.SelectFriendsActivity"
+    tools:showIn="@layout/activity_select_friends">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select All"
+                    android:background="@color/colorAccent"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="1dp"
+                    android:onClick="checkAll"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Deselect All"
+                    android:background="@color/colorAccent"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:onClick="uncheckAll"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/locations_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Error: no stops set"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="16dp"
+                android:background="#ffffff"
+                android:elevation="2dp"/>
+
+            <LinearLayout
+                android:id="@+id/friends_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:elevation="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="128dp">
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
