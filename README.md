@@ -6,5 +6,8 @@ file containing initialization info as well as the string file containing all re
 
 NavigationActivity.java is the launcher activity with RunFragment.java being the first loaded fragment.
 
+These files can be found along the path
+SupplyRun/app/src/main/java/com/example/ggould/supplyrun/navDrawerFragments/
+
 I apoligize for the lack of comments, I usually save those for the end since I frequently rework activity oprations and it all makes 
 sense in my head.
