@@ -1,5 +1,6 @@
 # SupplyRun
-A work in progress android app designed to allow users to request favors from their friends and submit instant person to person payment.
+A work in progress android app designed to allow users to request favors from their friends based on the places they go 
+and submit instant person to person payment.
 
 This application file contains all but two files from the project code.  Parse is used as the backend service, and the Parse application 
 file containing initialization info as well as the string file containing all relevant API keys have been ommitted.  
